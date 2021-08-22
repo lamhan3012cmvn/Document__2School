@@ -1,7 +1,7 @@
 ## Overview
 
 - Technical: 
-  - **Frontend** (Flutter >= 2.0)
+  - **Mobile** (Flutter >= 2.0)
   - **Backend** (NestJs => 8.0.2, Mongodb)
 - Mentor: PhD. **Phung** Huynh Xuan
 - Authors:
@@ -19,7 +19,7 @@
 
 <b>Project 2School</b>
 ├── [Repo Document](https://github.com/lamhan3012cmvn/Document__2School)   [Document of project]
-├── [Repo Client](https://github.com/hongvinhmobile/flutter_mobile_2school) (Frontend using Flutter)
+├── [Repo Client](https://github.com/hongvinhmobile/flutter_mobile_2school) (Mobile using Flutter)
 ├── [Repo Server](https://github.com/lamhan3012cmvn/NestJS_2School) (Backend using Node with NestJS Framework and MongoDB for database)
 
 <br>
