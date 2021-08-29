@@ -1,5 +1,6 @@
 ## Overview
-
+# Tiểu Luận Chuyên Ngành CNPM
+## Hệ Chất Lượng Cao Tiếng Việt
 - Technical: 
   - **Mobile** (Flutter >= 2.0)
   - **Backend** (NestJs => 8.0.2, Mongodb)
