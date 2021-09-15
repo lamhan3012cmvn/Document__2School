@@ -1,0 +1,119 @@
+@startuml 2School
+' hide the spot
+hide circle
+
+' avoid problems with angled crows feet
+skinparam linetype ortho
+
+entity "Accounts" as accounts {
+    *_id : object id <<generated>>
+    --
+    *username : string
+    *password : string
+    --
+    *createdAt : DateTime
+    *updatedAt : DateTime
+}
+
+entity "Users" as users {
+    *_id : object id <<generated>>
+    --
+    *firstName : string
+    *lastName : string
+    *displayName : string
+    intro : string
+    image : string
+    blurhash : string
+    phone : string
+    --
+    *createdAt : DateTime
+    *updatedAt : DateTime
+}
+
+entity "Devices" as devices {
+    *_id : object id <<generated>>
+    --
+    *fcmToken: string
+    *deviceUUid: string
+    *deviceModel: string
+    *appVersion: string
+    *status: number
+    --
+    *createdBy: string <<FK>>
+    --
+    *createdAt : DateTime
+    *updatedAt : DateTime
+}
+
+entity "Classes" as classes {
+    *_id : object id <<generated>>
+    --
+    *name: string
+    *intro: string,
+    *image: string,
+    *blurhash: string,
+    *members: array<string>
+    *status: number
+    --
+    *createdBy: string <<FK>>
+    --
+    *createdAt : DateTime
+    *updatedAt : DateTime
+}
+
+entity "RoadMaps" as roadMaps {
+    *_id : object id <<generated>>
+    --
+    *name: string
+    *description: string
+    --
+    *createdBy: string <<FK>>
+    --
+    *createdAt : DateTime
+    *updatedAt : DateTime
+}
+
+entity "RoadMapContents" as roadContentMaps {
+    *_id : object id <<generated>>
+    --
+    *name: string
+    *description: string
+    *type: number
+    --
+    *idRoadMap: string <<FK>>
+    --
+    *createdAt : DateTime
+    *updatedAt : DateTime
+}
+
+entity "Questions" as questions {
+    *_id : object id <<generated>>
+    --
+    *question: string
+    *answers: array<string>,
+    *duration: number <<second>>
+    *corrects: array <number>
+    *questionIndex: number
+    --
+    *idSetOfQuestions: string <<FK>>
+    --
+    *createdAt : DateTime
+    *updatedAt : DateTime
+}
+
+
+entity "SetOfQuestions" as setOfQuestions {
+    *_id : object id <<generated>>
+    --
+    *name: string
+    *description: string
+    *usedTimes: int
+    --
+    *createdBy: string <<FK>>
+    --
+    *createdAt : DateTime
+    *updatedAt : DateTime
+}
+
+
+@enduml
