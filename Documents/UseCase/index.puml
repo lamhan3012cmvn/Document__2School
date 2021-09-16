@@ -1,0 +1,147 @@
+
+@startuml 2School
+
+actor Guest as g
+actor User as u
+actor Admin as ad
+actor Mentor as me
+
+package User_Join_Lop{
+  usecase Lay_Danh_Sach_User_Join_Lop
+  usecase Accept_User_Join_Lop
+  usecase Reject_User_Join_Lop
+}
+
+package Authentication{
+  usecase DangNhap as login
+  usecase DangKy as register
+}
+
+package Questions{
+  usecase Lay_Danh_Sach_Bo_De_Kiem_Tra
+  usecase Tao_Bo_De_Kiem_Tra
+  usecase CapNhat_Bo_De_Kiem_Tra
+  usecase Xoa_Bo_De_Kiem_Tra
+
+  usecase Lay_Danh_SachCau_Hoi_Kiem_Tra
+  usecase Tao_Cau_HoiKiem_Tra
+  usecase CapNhat_Cau_HoiKiem_Tra
+  usecase Xoa_Cau_HoiKiem_Tra
+}
+
+package RoadMap {
+  usecase Lay_Danh_Sach_RoadMap
+  usecase Tao_RoadMap
+  usecase Sua_RoadMap
+  usecase Xoa_RoadMap
+}
+
+package RoadMapContent {
+  usecase Lay_DanhSach_RoadMapContent
+  usecase Tao_RoadMapContent
+  usecase Sua_RoadMapContent
+  usecase Xoa_RoadMapContent
+}
+
+package Kahoot{
+  usecase Lam_Bai_Kiem_Tra_Kahoot
+  usecase Nhap_Ma_Pin_Kiem_Tra
+}
+
+package Course{
+  usecase Lay_Danh_Sach_Lop_Hoc
+  usecase Tao_Lop_Hoc
+  usecase Tham_Gia_Lop_Hoc
+}
+
+package Attendance{
+  usecase Diem_Danh
+  usecase Tao_Diem_Danh
+}
+
+package Assignment{
+  usecase Tao_Assignment
+  usecase Lam_Assignment
+
+}
+package Post{
+  usecase Dang_Bai_Viet
+  usecase NewFeed
+
+}
+package user{
+
+  usecase Xem_Thong_Bao
+  usecase Xem_Thanh_Tuu
+
+  usecase Cap_Nhat_Thong_Tin_User
+  usecase Quen_Mat_Khau
+  usecase Doi_Mat_Khau
+
+}
+
+g --> login
+g --> register
+
+u --> Cap_Nhat_Thong_Tin_User
+u --> Tham_Gia_Lop_Hoc
+u --> Quen_Mat_Khau
+u --> Doi_Mat_Khau
+
+u --> Tao_Lop_Hoc
+u --> NewFeed
+u --> Lay_Danh_Sach_RoadMap
+u --> Lay_DanhSach_RoadMapContent
+
+u --> Lay_Danh_Sach_Lop_Hoc
+u --> Lam_Bai_Kiem_Tra_Kahoot
+u --> Lam_Assignment
+u --> Dang_Bai_Viet
+
+u --> Diem_Danh
+u --> Nhap_Ma_Pin_Kiem_Tra
+u --> Xem_Thong_Bao
+u --> Xem_Thanh_Tuu
+
+u <|-- ad
+
+ad --> Tao_Diem_Danh
+ad --> Tao_Bo_De_Kiem_Tra
+ad --> CapNhat_Bo_De_Kiem_Tra
+ad --> Xoa_Bo_De_Kiem_Tra
+
+ad --> Tao_RoadMap
+ad --> Sua_RoadMap
+ad --> Xoa_RoadMap
+
+ad --> Tao_RoadMapContent
+ad --> Sua_RoadMapContent
+ad --> Xoa_RoadMapContent
+ad --> Tao_Assignment
+ad --> User_Join_Lop
+
+
+
+me --> Lay_Danh_Sach_Bo_De_Kiem_Tra
+me --> Tao_Bo_De_Kiem_Tra
+me --> CapNhat_Bo_De_Kiem_Tra
+me --> Xoa_Bo_De_Kiem_Tra
+
+me --> Lay_Danh_SachCau_Hoi_Kiem_Tra
+me --> Tao_Cau_HoiKiem_Tra
+me --> CapNhat_Cau_HoiKiem_Tra
+me --> Xoa_Cau_HoiKiem_Tra
+
+me --> Lay_DanhSach_RoadMapContent
+me --> Tao_RoadMapContent
+me --> Sua_RoadMapContent
+me --> Xoa_RoadMapContent
+
+me --> Lam_Bai_Kiem_Tra_Kahoot
+me --> Nhap_Ma_Pin_Kiem_Tra
+
+me --> Assignment
+me --> Attendance
+me --> Post
+me --> User_Join_Lop
+@enduml
