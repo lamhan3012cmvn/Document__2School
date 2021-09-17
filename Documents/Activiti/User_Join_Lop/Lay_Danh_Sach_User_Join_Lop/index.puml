@@ -1,0 +1,6 @@
+@startuml LayDanhSachUserJoinLop
+start
+:Vào trang yêu cầu tham gia;
+:Lấy danh sách user yêu cầu;
+stop
+@enduml

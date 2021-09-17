@@ -1,0 +1,6 @@
+@startuml XemThongBao
+start
+:Bấm vào trang thông báo;
+:Lấy danh sách thông báo;
+stop
+@enduml

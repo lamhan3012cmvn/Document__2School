@@ -1,0 +1,12 @@
+@startuml DoiMatKhau
+start
+repeat
+:Nhập password cũ;
+:Nhập password mới;
+:Nhập lại password mới;
+:Bấm đổi mật khẩu;
+backward: Thông báo cho user;
+repeat while (Mật khẩu cũ đúng?) is (sai)
+->đúng;
+stop
+@enduml

@@ -1,0 +1,6 @@
+@startuml AcceptUserJoinLop
+start
+:Lấy danh sách user request;
+:Đồng ý user;
+stop
+@enduml

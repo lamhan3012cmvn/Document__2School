@@ -1,0 +1,6 @@
+@startuml CapNhatThongTinUser
+start
+:Nhập thông tin mới;
+:Bấm lưu thay đổi;
+stop
+@enduml

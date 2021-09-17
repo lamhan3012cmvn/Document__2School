@@ -1,0 +1,6 @@
+@startuml XemThanhTuu
+start
+:Vào tab profile;
+:Lấy danh sách thành tựu;
+stop
+@enduml

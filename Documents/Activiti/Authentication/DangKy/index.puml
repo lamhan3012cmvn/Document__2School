@@ -2,7 +2,6 @@
 start
 repeat
 :Nhập email;
-:Nhập username;
 :Nhập password;
 :Nhập lại password;
 :Bấm đăng ký;

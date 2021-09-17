@@ -1,0 +1,6 @@
+@startuml RejectUserJoinLop
+start
+:Lấy danh sách user request;
+:Từ chối user;
+stop
+@enduml

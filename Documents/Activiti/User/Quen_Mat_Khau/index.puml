@@ -1,0 +1,14 @@
+@startuml QuenMatKhau
+start
+repeat
+:Nhập username;
+backward: Thông báo cho user;
+repeat while (Email tồn tại?) is (sai)
+->đúng;
+repeat
+:Nhập mã pin;
+backward: Thông báo cho user;
+repeat while (Mã pin đúng?) is (sai)
+->đúng;
+stop
+@enduml
