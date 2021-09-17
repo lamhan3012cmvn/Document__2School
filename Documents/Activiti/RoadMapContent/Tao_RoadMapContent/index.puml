@@ -1,0 +1,6 @@
+@startuml TaoRoadMapContent
+start
+:Nhập thông tin RoadMapContent;
+:Bấm Tạo mới;
+stop
+@enduml

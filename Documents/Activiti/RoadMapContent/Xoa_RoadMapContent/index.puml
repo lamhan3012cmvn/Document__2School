@@ -1,0 +1,9 @@
+@startuml XoaRoadMapContent
+start
+repeat
+:Bấm xóa RoadMapContent;
+:Show dialog hỏi chắc chắn;
+repeat while (Chắc chắn?) is (Không)
+->Có;
+stop
+@enduml

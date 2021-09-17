@@ -1,0 +1,6 @@
+@startuml LayDanhSachRoadMapContent
+start
+:Bấm vào roadmap;
+:Lấy danh sách chi tiết trong roadmap;
+stop
+@enduml
