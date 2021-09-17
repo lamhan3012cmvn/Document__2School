@@ -1,0 +1,11 @@
+@startuml DangNhap
+start
+repeat
+:Nhập username;
+:Nhập password;
+:Bấm đăng nhập;
+backward: Thông báo cho user;
+repeat while (Kiểm tra thông tin?) is (sai)
+->đúng;
+stop
+@enduml

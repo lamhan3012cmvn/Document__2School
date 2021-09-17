@@ -1,0 +1,13 @@
+@startuml DangKy
+start
+repeat
+:Nhập email;
+:Nhập username;
+:Nhập password;
+:Nhập lại password;
+:Bấm đăng ký;
+backward: Thông báo cho user;
+repeat while (Kiểm tra thông tin?) is (sai)
+->đúng;
+stop
+@enduml
