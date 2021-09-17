@@ -1,0 +1,6 @@
+@startuml SuaRoadMap
+start
+:Nhập thông tin mới;
+:Bấm lưu thông tin;
+stop
+@enduml
