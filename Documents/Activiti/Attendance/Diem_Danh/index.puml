@@ -1,0 +1,5 @@
+@startuml DiemDanh
+start
+:Bấm nút điểm danh;
+stop
+@enduml

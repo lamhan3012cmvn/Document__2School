@@ -1,0 +1,7 @@
+@startuml TaoAssignment
+start
+:Nhập thông tin Assignment;
+:Xét deadline;
+:Bấm tạo assignment;
+stop
+@enduml

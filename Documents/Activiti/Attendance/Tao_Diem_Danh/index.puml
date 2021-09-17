@@ -1,0 +1,6 @@
+@startuml TaoDiemDanh
+start
+:Chọn giờ hết hạn;
+:Bấm tạo điểm danh;
+stop
+@enduml

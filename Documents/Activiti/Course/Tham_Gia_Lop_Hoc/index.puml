@@ -1,0 +1,5 @@
+@startuml ThamGiaLopHoc
+start
+:Bấm tham gia lớp học;
+stop
+@enduml

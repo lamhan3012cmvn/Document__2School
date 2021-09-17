@@ -1,0 +1,6 @@
+@startuml LamAssignment
+start
+:Chọn file;
+:Bấm nộp bài;
+stop
+@enduml

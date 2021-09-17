@@ -1,0 +1,6 @@
+@startuml TaoLopHoc
+start
+:Nhập thông tin lớp học;
+:Bấm tạo lớp học;
+stop
+@enduml
