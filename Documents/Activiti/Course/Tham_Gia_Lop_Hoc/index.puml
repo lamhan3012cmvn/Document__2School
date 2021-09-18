@@ -1,5 +1,9 @@
 @startuml ThamGiaLopHoc
 start
+:Bấm vào lớp học;
+if (Chưa tham gia) is (đúng) then 
 :Bấm tham gia lớp học;
+else (sai) 
+endif
 stop
 @enduml

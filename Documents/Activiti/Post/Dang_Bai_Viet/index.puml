@@ -1,0 +1,7 @@
+@startuml DangBaiViet
+start
+:Viết nội dung;
+:Lấy danh sách các lớp đang tham gia;
+:Chọn những lớp đăng bài lên;
+stop
+@enduml

@@ -1,0 +1,6 @@
+@startuml LayDanhSachLopHoc
+start
+:Chuyển qua tab lớp học;
+:Hiển thị các lớp đang tham gia;
+stop
+@enduml

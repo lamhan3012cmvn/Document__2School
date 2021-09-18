@@ -1,0 +1,10 @@
+@startuml CapNhatBoDeKiemTra
+start
+:Xem mô tả bộ đề;
+:Bấm chỉnh sửa;
+if (Check role là admin hoặc mentor) is (đúng) then
+:Nhập thông tin mới;
+:Bấm lưu thông tin;
+endif
+stop
+@enduml0

@@ -1,6 +1,10 @@
 @startuml LamAssignment
 start
-:Chọn file;
-:Bấm nộp bài;
+if (Check Role là user trong class?) is (đúng) then
+    :Chọn file;
+    :Bấm nộp bài;
+else (sai) 
+
+endif
 stop
 @enduml

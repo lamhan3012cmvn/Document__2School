@@ -1,5 +1,8 @@
 @startuml DiemDanh
 start
+if (Check role trong lớp là user?) is (đúng) then
 :Bấm nút điểm danh;
+else (sai)
+endif
 stop
 @enduml

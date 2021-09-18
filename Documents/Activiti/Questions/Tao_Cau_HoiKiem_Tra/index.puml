@@ -1,0 +1,12 @@
+@startuml TaoCauHoiKiemTra
+start
+repeat
+:Nhập câu hỏi;
+:Nhập câu trả lời;
+:Chọn câu đúng;
+:Đặt thời gian trả lời;
+backward: Thông báo cho user;
+repeat while (Check role là admin hoặc mentor) is (sai)
+->đúng;
+stop
+@enduml

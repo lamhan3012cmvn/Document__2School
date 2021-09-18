@@ -1,0 +1,6 @@
+@startuml NewFeet
+start
+:Chuyển qua tab bài viết;
+:Lấy danh sách bài viết của những lớp đang tham gia;
+stop
+@enduml

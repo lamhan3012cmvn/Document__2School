@@ -1,0 +1,14 @@
+@startuml XoaCauHoiKiemTra
+start
+repeat
+repeat
+:Chọn xem câu hỏi;
+:Bấm xóa câu hỏi;
+:Show dialog hỏi lại;
+repeat while (Chắc chắn với lựa chọn) is (sai)
+->đúng;
+backward: Thông báo cho user;
+repeat while (Check role là admin hoặc mentor) is (sai)
+->đúng;
+stop
+@enduml

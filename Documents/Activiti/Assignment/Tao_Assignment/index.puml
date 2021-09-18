@@ -1,7 +1,10 @@
 @startuml TaoAssignment
 start
+if (Check role là Admin hoặc Mentor) is (đúng) then
 :Nhập thông tin Assignment;
 :Xét deadline;
 :Bấm tạo assignment;
+else (sai)
+endif
 stop
 @enduml

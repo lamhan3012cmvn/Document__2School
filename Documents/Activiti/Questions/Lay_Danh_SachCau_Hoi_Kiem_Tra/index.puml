@@ -1,0 +1,8 @@
+@startuml LayDanhSachCauHoiKiemTra
+start
+:Bấm vào 1 bộ đề từ danh sách;
+if (Check role là admin hoặc mentor) is (đúng) then 
+:Hiển thị danh sách bộ đề của lớp;
+endif
+stop
+@enduml

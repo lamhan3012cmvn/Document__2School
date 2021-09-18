@@ -1,0 +1,8 @@
+@startuml LamBaiKiemTraKahoot
+start
+:Xem mô tả bài kiểm tra;
+if (Check role là user trong lớp\nvà bài kiểm tra đang diễn ra) is (đúng) then
+:Làm bài kiểm tra;
+endif
+stop
+@enduml

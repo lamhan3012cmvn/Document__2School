@@ -1,6 +1,9 @@
 @startuml TaoDiemDanh
 start
+if (Check role trong lớp là admin hoặc mentor) is (đúng) then
 :Chọn giờ hết hạn;
 :Bấm tạo điểm danh;
+else (sai)
+endif
 stop
 @enduml

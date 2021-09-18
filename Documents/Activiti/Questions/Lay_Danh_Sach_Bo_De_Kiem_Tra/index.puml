@@ -1,0 +1,8 @@
+@startuml LayDanhSachBoDeKiemTra
+start
+:Vào xem danh sách bộ đề của lớp;
+if (Check role là admin hoặc mentor) is (đúng) then 
+:Hiển thị danh sách bộ đề của lớp;
+endif
+stop
+@enduml

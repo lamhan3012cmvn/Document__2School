@@ -1,0 +1,8 @@
+@startuml NhapMaPinKiemTra
+start
+:Nhập mã pin;
+if (Kiểm tra bài kiểm tra tồn tại) is (đúng) then
+:Vào trang mô tả bài kiểm tra;
+endif
+stop
+@enduml
