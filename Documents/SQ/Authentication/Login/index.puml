@@ -1,0 +1,27 @@
+@startuml Login
+actor Guest as g
+actor User as u
+participant Mobile as fe
+participant Server as sv
+participant TokenService as token
+
+database Mongo as db
+
+g --> fe: Nhap_UserName_Pass
+fe --> sv: Send Api Login
+alt valdateDataApi (false)
+  sv --> fe: Format data false
+end
+sv --> db: Kiểm tra tồn tại\n userName and Password
+db --> sv: user
+alt userName and Password (false)
+  sv --> fe: UserName or Password wrong
+end
+sv --> token: gửi data tạo token
+token --> sv: gửi token về sv
+sv --> fe: gửi data \nđăng nhập thành công
+fe --> g: Thông báo cho guest
+alt Đăng nhập thành công(true)
+  g --> u: Đăng nhập thành công
+end
+@enduml

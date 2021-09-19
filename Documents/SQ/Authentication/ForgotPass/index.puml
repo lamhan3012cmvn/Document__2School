@@ -1,0 +1,55 @@
+@startuml ForgotPass
+actor Guest as g
+participant Mobile as fe
+participant Server as sv
+participant MailService as mail
+
+database Mongo as db
+
+g --> fe: Nhập Thông tin đăng ký
+alt Kiêm tra input (true)
+  fe --> sv: Send Api ForgotPass
+  alt valdateDataApi (false)
+    sv --> fe: Data Không hợp lệ
+  end
+  sv --> db: Kiểm tra tồn tại\n userName
+
+  alt user không tồn tại (false)
+    sv--> fe: UserName tồi tại
+  end
+
+  sv--> sv: Tạo opt
+  sv --> mail: Mail OTP
+  sv --> fe: data email
+
+  fe --> g: Hiển thị cho guest
+  alt mail tồn tại(true)
+    g --> fe: Nhập OTP từ mail
+    alt OTP (false)
+      fe --> g: Không khớp OTP
+    end
+    g --> fe: Nhập mật khẩu
+
+    alt Kiêm tra input (true)
+      fe --> sv: Send Api ChangePass
+      alt valdateDataApi (false)
+        sv --> fe: Data Không hợp lệ
+      end
+      sv --> db: Kiểm tra tồn tại\n userName
+
+      alt user không tồn tại (false)
+        sv--> fe: UserName không tồi tại
+      end
+
+      sv--> sv: Mã hóa mật khẩu
+
+      sv --> db: Cập nhật mật khẩu
+      db --> sv:data user
+
+      sv --> fe:data user
+      fe --> g: thông báo cho guest
+    end
+  else validateDateFail
+    fe --> g: Thông báo Nhập sai format
+  end
+  @enduml
